@@ -7,19 +7,23 @@ import { RouterModule, Routes } from "@angular/router";
 
 import { AppComponent } from "./app.component";
 import { ConfiguracaoComponent } from "./components/configuracao/configuracao.component";
+import { HeaderComponent } from "./core/header/header.component";
 
 import { MaterialModule } from "./shared/material.module";
 import { SharedModule } from "./shared/shared.module";
 import { FlexLayoutModule } from "@angular/flex-layout";
+import { CoreModule } from "./core/core.module";
 
 const routes: Routes = [
   { path: "configuracao", component: ConfiguracaoComponent },
+  { path: "agendamentos", component: HeaderComponent },
   { path: "**", redirectTo: "configuracao" },
 ];
 
 @NgModule({
   declarations: [AppComponent, ConfiguracaoComponent],
   imports: [
+    CoreModule,
     SharedModule,
     MaterialModule,
     FlexLayoutModule,

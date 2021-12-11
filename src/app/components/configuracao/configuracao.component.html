@@ -1,1 +1,71 @@
-<p>configuracao works!</p>
+<div class="background" fxLayout="column" fxLayoutAlign="center center">
+  <mat-card class="card">
+    <mat-card-content>
+      <form [formGroup]="form">
+        <!-- UNIDADE -->
+        <h4>Unidade</h4>
+        <mat-form-field appearance="fill">
+          <mat-label>Selecione</mat-label>
+          <mat-select
+            [required]="true"
+            formControlName="unidadeControl"
+            (selectionChange)="selecionarUnidade($event.value)"
+          >
+            <mat-option
+              *ngFor="let unidade of unidades$ | async"
+              [value]="unidade"
+            >
+              {{ unidade.Descricao }}
+            </mat-option>
+          </mat-select>
+          <mat-error *ngIf="form.get('unidadeControl')?.hasError('required')">
+            Selecione uma Unidade.
+          </mat-error>
+        </mat-form-field>
+
+        <!-- CENTRO CIRÚRGICO -->
+        <h4>Centro Cirúrgico</h4>
+        <mat-form-field appearance="fill">
+          <mat-label>Selecione</mat-label>
+          <mat-select
+            [required]="true"
+            [disabled]="form.get('unidadeControl').invalid"
+            formControlName="centroControl"
+            (selectionChange)="selecionarCentroCirurgico($event.value)"
+          >
+            <mat-option
+              *ngFor="let centroCirurgico of centrosCirurgicos$ | async"
+              [value]="centroCirurgico"
+            >
+              {{ centroCirurgico.Descricao }}
+            </mat-option>
+          </mat-select>
+          <mat-error *ngIf="form.get('centroControl')?.hasError('required')">
+            Selecione um Centro Cirúrgico.
+          </mat-error>
+        </mat-form-field>
+
+        <!-- SALA -->
+        <h4>Sala</h4>
+        <mat-form-field appearance="fill">
+          <mat-label>Selecione</mat-label>
+          <mat-select
+            [required]="true"
+            [disabled]="form.get('centroControl').invalid"
+            formControlName="salaControl"
+          >
+            <mat-option *ngFor="let sala of salas$ | async" [value]="sala">
+              {{ sala.Descricao }}
+            </mat-option>
+          </mat-select>
+          <mat-error *ngIf="form.get('salaControl')?.hasError('required')">
+            Selecione uma Sala.
+          </mat-error>
+        </mat-form-field>
+        <p>
+          <button mat-raised-button color="primary">Selecionar</button>
+        </p>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</div>

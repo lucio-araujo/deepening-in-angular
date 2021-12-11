@@ -1,0 +1,238 @@
+{
+  "Unidades": [
+    {
+      "id": 1,
+      "Codigo": "UND01",
+      "Descricao": "Unidade 01",
+      "CentrosCirurgicosIds": [1, 2]
+    },
+    {
+      "id": 2,
+      "Codigo": "UND02",
+      "Descricao": "Unidade 02",
+      "CentrosCirurgicosIds": [3, 4]
+    }
+  ],
+  "CentrosCirurgicos": [
+    {
+      "id": 1,
+      "Codigo": "CC01",
+      "Descricao": "Centro Cirúrgico Um - UND01",
+      "SalasIds": [1, 2]
+    },
+    {
+      "id": 2,
+      "Codigo": "CC02",
+      "Descricao": "Centro Cirúrgico Dois - UND01",
+      "SalasIds": [3, 4]
+    },
+    {
+      "id": 3,
+      "Codigo": "CC01",
+      "Descricao": "Centro Cirúrgico Um - UND02",
+      "SalasIds": [5, 6]
+    },
+    {
+      "id": 4,
+      "Codigo": "CC02",
+      "Descricao": "Centro Cirúrgico Dois - UND02",
+      "SalasIds": [7, 8]
+    }
+  ],
+  "Salas": [
+    {
+      "id": 1,
+      "Codigo": "SL01",
+      "Descricao": "Sala Um - CC01",
+      "CirurgiasIds": [1, 2]
+    },
+    {
+      "id": 2,
+      "Codigo": "SL02",
+      "Descricao": "Sala Dois - CC01",
+      "CirurgiasIds": [3, 4]
+    },
+    {
+      "id": 3,
+      "Codigo": "SL01",
+      "Descricao": "Sala Um - CC02",
+      "CirurgiasIds": [5, 6]
+    },
+    {
+      "id": 4,
+      "Codigo": "SL02",
+      "Descricao": "Sala Dois - CC02",
+      "CirurgiasIds": [7, 8]
+    },
+    {
+      "id": 5,
+      "Codigo": "SL01",
+      "Descricao": "Sala Um - CC03",
+      "CirurgiasIds": [9, 10]
+    },
+    {
+      "id": 6,
+      "Codigo": "SL02",
+      "Descricao": "Sala Dois - CC03",
+      "CirurgiasIds": [11, 12]
+    },
+    {
+      "id": 7,
+      "Codigo": "SL01",
+      "Descricao": "Sala Um - CC04",
+      "CirurgiasIds": [13, 14]
+    },
+    {
+      "id": 8,
+      "Codigo": "SL02",
+      "Descricao": "Sala Dois - CC04",
+      "CirurgiasIds": [15, 16]
+    }
+  ],
+  "Cirurgias": [
+    {
+      "id": 1,
+      "Codigo": "CR01",
+      "Descricao": "Cirurgia do Coração",
+      "AgendaCirurgia": "20-10-2021 10:00",
+      "HoraFim": "11:00",
+      "Medico": "Dr. Coisinha",
+      "Paciente": "José João"
+    },
+    {
+      "id": 2,
+      "Codigo": "CR02",
+      "Descricao": "Cirurgia do Coração",
+      "AgendaCirurgia": "20-10-2021 10:00",
+      "HoraFim": "11:00",
+      "Medico": "Dr. Coisinha",
+      "Paciente": "José João"
+    },
+    {
+      "id": 3,
+      "Codigo": "CR03",
+      "Descricao": "Cirurgia do Coração",
+      "AgendaCirurgia": "20-10-2021 10:00",
+      "HoraFim": "11:00",
+      "Medico": "Dr. Coisinha",
+      "Paciente": "José João"
+    },
+    {
+      "id": 4,
+      "Codigo": "CR04",
+      "Descricao": "Cirurgia do Coração",
+      "AgendaCirurgia": "20-10-2021 10:00",
+      "HoraFim": "11:00",
+      "Medico": "Dr. Coisinha",
+      "Paciente": "José João"
+    },
+    {
+      "id": 5,
+      "Codigo": "CR05",
+      "Descricao": "Cirurgia do Coração",
+      "AgendaCirurgia": "20-10-2021 10:00",
+      "HoraFim": "11:00",
+      "Medico": "Dr. Coisinha",
+      "Paciente": "José João"
+    },
+    {
+      "id": 6,
+      "Codigo": "CR06",
+      "Descricao": "Cirurgia do Coração",
+      "AgendaCirurgia": "20-10-2021 10:00",
+      "HoraFim": "11:00",
+      "Medico": "Dr. Coisinha",
+      "Paciente": "José João"
+    },
+    {
+      "id": 7,
+      "Codigo": "CR07",
+      "Descricao": "Cirurgia do Coração",
+      "AgendaCirurgia": "20-10-2021 10:00",
+      "HoraFim": "11:00",
+      "Medico": "Dr. Coisinha",
+      "Paciente": "José João"
+    },
+    {
+      "id": 8,
+      "Codigo": "CR08",
+      "Descricao": "Cirurgia do Coração",
+      "AgendaCirurgia": "20-10-2021 10:00",
+      "HoraFim": "11:00",
+      "Medico": "Dr. Coisinha",
+      "Paciente": "José João"
+    },
+    {
+      "id": 9,
+      "Codigo": "CR09",
+      "Descricao": "Cirurgia do Coração",
+      "AgendaCirurgia": "20-10-2021 10:00",
+      "HoraFim": "11:00",
+      "Medico": "Dr. Coisinha",
+      "Paciente": "José João"
+    },
+    {
+      "id": 10,
+      "Codigo": "CR010",
+      "Descricao": "Cirurgia do Coração",
+      "AgendaCirurgia": "20-10-2021 10:00",
+      "HoraFim": "11:00",
+      "Medico": "Dr. Coisinha",
+      "Paciente": "José João"
+    },
+    {
+      "id": 11,
+      "Codigo": "CR011",
+      "Descricao": "Cirurgia do Coração",
+      "AgendaCirurgia": "20-10-2021 10:00",
+      "HoraFim": "11:00",
+      "Medico": "Dr. Coisinha",
+      "Paciente": "José João"
+    },
+    {
+      "id": 12,
+      "Codigo": "CR012",
+      "Descricao": "Cirurgia do Coração",
+      "AgendaCirurgia": "20-10-2021 10:00",
+      "HoraFim": "11:00",
+      "Medico": "Dr. Coisinha",
+      "Paciente": "José João"
+    },
+    {
+      "id": 13,
+      "Codigo": "CR013",
+      "Descricao": "Cirurgia do Coração",
+      "AgendaCirurgia": "20-10-2021 10:00",
+      "HoraFim": "11:00",
+      "Medico": "Dr. Coisinha",
+      "Paciente": "José João"
+    },
+    {
+      "id": 14,
+      "Codigo": "CR014",
+      "Descricao": "Cirurgia do Coração",
+      "AgendaCirurgia": "20-10-2021 10:00",
+      "HoraFim": "11:00",
+      "Medico": "Dr. Coisinha",
+      "Paciente": "José João"
+    },
+    {
+      "id": 15,
+      "Codigo": "CR015",
+      "Descricao": "Cirurgia do Coração",
+      "AgendaCirurgia": "20-10-2021 10:00",
+      "HoraFim": "11:00",
+      "Medico": "Dr. Coisinha",
+      "Paciente": "José João"
+    },
+    {
+      "id": 16,
+      "Codigo": "CR016",
+      "Descricao": "Cirurgia do Coração",
+      "AgendaCirurgia": "20-10-2021 10:00",
+      "HoraFim": "11:00",
+      "Medico": "Dr. Coisinha",
+      "Paciente": "José João"
+    }
+  ]
+}

@@ -1,12 +1,10 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MaterializeModule } from './materialize.module';
+import { NgModule } from '@angular/core';
 
 @NgModule({
   declarations: [],
   imports: [
     CommonModule,
-    MaterializeModule
   ]
 })
 export class SharedModule { }

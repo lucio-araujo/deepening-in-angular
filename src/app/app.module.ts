@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 
 import { SharedModule } from './shared/shared.module';
 import { ConfiguracaoComponent } from './components/configuracao/configuracao.component';
+import { MaterialModule } from './shared/material.module';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,8 +16,10 @@ import { ConfiguracaoComponent } from './components/configuracao/configuracao.co
   ],
   imports: [
     SharedModule,
-    BrowserModule,
+    MaterialModule,
+    ReactiveFormsModule,
     AppRoutingModule,
+    BrowserModule,
     BrowserAnimationsModule
   ],
   providers: [],

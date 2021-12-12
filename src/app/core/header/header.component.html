@@ -1,1 +1,31 @@
-<mat-icon>home</mat-icon>
+<mat-grid-list
+  cols="12"
+  rowHeight="52px"
+  style="background: #01579b; color: white"
+>
+  <mat-grid-tile colspan="6">
+    <div
+      class="container"
+      fxLayout="row"
+      fxLayoutAlign="start center"
+      fxLayoutGap="1.0%"
+    >
+      <mat-icon>home</mat-icon>
+      <app-today></app-today>
+      <p>|</p>
+      <app-clock></app-clock>
+    </div>
+  </mat-grid-tile>
+
+  <mat-grid-tile colspan="6">
+    <div
+      class="container"
+      fxLayout="row"
+      fxLayoutAlign="end center"
+      fxLayoutGap="5.0%"
+    >
+    <p>Token: --</p>
+    <p>Sala: Sala Teste 12345678910</p>
+</div>
+  </mat-grid-tile>
+</mat-grid-list>
